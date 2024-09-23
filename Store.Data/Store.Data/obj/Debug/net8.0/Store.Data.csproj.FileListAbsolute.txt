@@ -1,0 +1,13 @@
+/Users/macbook/Documents/E-Commerce.NET/Store.Data/Store.Data/bin/Debug/net8.0/Store.Data.deps.json
+/Users/macbook/Documents/E-Commerce.NET/Store.Data/Store.Data/bin/Debug/net8.0/Store.Data.dll
+/Users/macbook/Documents/E-Commerce.NET/Store.Data/Store.Data/bin/Debug/net8.0/Store.Data.pdb
+/Users/macbook/Documents/E-Commerce.NET/Store.Data/Store.Data/obj/Debug/net8.0/Store.Data.csproj.AssemblyReference.cache
+/Users/macbook/Documents/E-Commerce.NET/Store.Data/Store.Data/obj/Debug/net8.0/Store.Data.GeneratedMSBuildEditorConfig.editorconfig
+/Users/macbook/Documents/E-Commerce.NET/Store.Data/Store.Data/obj/Debug/net8.0/Store.Data.AssemblyInfoInputs.cache
+/Users/macbook/Documents/E-Commerce.NET/Store.Data/Store.Data/obj/Debug/net8.0/Store.Data.AssemblyInfo.cs
+/Users/macbook/Documents/E-Commerce.NET/Store.Data/Store.Data/obj/Debug/net8.0/Store.Data.csproj.CoreCompileInputs.cache
+/Users/macbook/Documents/E-Commerce.NET/Store.Data/Store.Data/obj/Debug/net8.0/Store.Data.sourcelink.json
+/Users/macbook/Documents/E-Commerce.NET/Store.Data/Store.Data/obj/Debug/net8.0/Store.Data.dll
+/Users/macbook/Documents/E-Commerce.NET/Store.Data/Store.Data/obj/Debug/net8.0/refint/Store.Data.dll
+/Users/macbook/Documents/E-Commerce.NET/Store.Data/Store.Data/obj/Debug/net8.0/Store.Data.pdb
+/Users/macbook/Documents/E-Commerce.NET/Store.Data/Store.Data/obj/Debug/net8.0/ref/Store.Data.dll
