@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "qY9QtSA++1xfJqlENyfZ6ulQhO1ubO0lOQEJO15ITYgApYY8VfzUThXZAf+oJv+2OkZMdOK8ITnWjKweoApkXA==",
+  "dgSpecHash": "Olqyhyl4nKlapnRgp21+qrU8H7kLm6mK2obcC2Jhn/o8ilVHzii25eHxXWoHHZ3agx4DMOcbbmR0QK9RFtN4UQ==",
   "success": true,
   "projectFilePath": "/Users/macbook/Documents/E-Commerce.NET/Store.Data/Store.Service/Store.Service.csproj",
   "expectedPackageFiles": [
+    "/Users/macbook/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
     "/Users/macbook/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/Users/macbook/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",
     "/Users/macbook/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
