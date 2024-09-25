@@ -7,7 +7,7 @@ public class ProductSpecification
     public string? Sort { get; set; }
     public int PageIndex { get; set; } = 1;
     private const int MAXPAGESIZE = 50;
-    public int _pageSize { get; set; } = 6;
+    private int _pageSize = 6;
     private string? _search { get; set; }
     public int PageSize
     {

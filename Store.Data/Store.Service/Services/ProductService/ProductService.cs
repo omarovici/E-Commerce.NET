@@ -34,7 +34,7 @@ public class ProductService : IProductService
         var count = await _unitOfWork.Repository<Product, int>().GetCoutSpecificationAsync(countSpecs);
         var mappedProducts = _mapper.Map<IReadOnlyList<ProductDetailsDto>>(products);
 
-        return new PaginatedResultDto<ProductDetailsDto>(input.PageSize , input.PageIndex, products.Count, mappedProducts);
+        return new PaginatedResultDto<ProductDetailsDto>(input.PageSize , input.PageIndex, count, mappedProducts);
     }
     
     public async Task<IReadOnlyList<BrandTypeDetailsDto>> GetAllTypesAsync()
