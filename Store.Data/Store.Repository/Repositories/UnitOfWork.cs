@@ -22,7 +22,7 @@ public class UnitOfWork : IUnitOfWork
         if(_repositories is null)
             _repositories = new Hashtable();
         
-        var entityKey = typeof(TEntity).Name; // "Product"
+        var entityKey = typeof(TEntity).Name; // "ProductSpecs"
 
         if (!_repositories.ContainsKey(entityKey))
         {

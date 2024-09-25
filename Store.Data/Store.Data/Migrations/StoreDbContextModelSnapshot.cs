@@ -22,7 +22,7 @@ namespace Store.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Store.Data.Entities.Product", b =>
+            modelBuilder.Entity("Store.Data.Entities.ProductSpecs", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -103,7 +103,7 @@ namespace Store.Data.Migrations
                     b.ToTable("ProductTypes");
                 });
 
-            modelBuilder.Entity("Store.Data.Entities.Product", b =>
+            modelBuilder.Entity("Store.Data.Entities.ProductSpecs", b =>
                 {
                     b.HasOne("Store.Data.Entities.ProductBrand", "Brand")
                         .WithMany()
