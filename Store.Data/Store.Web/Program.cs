@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using StackExchange.Redis;
 using Store.Data.Context;
 using Store.Repository;
 using Store.Repository.Interfaces;
@@ -25,6 +26,12 @@ public class Program
         builder.Services.AddDbContext<StoreDbContext>(options =>
         {
             options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+        });
+
+        builder.Services.AddSingleton<IConnectionMultiplexer>(config =>
+        {
+            var configuration = ConfigurationOptions.Parse(builder.Configuration.GetConnectionString("Redis"));
+            return ConnectionMultiplexer.Connect(configuration);
         });
 
         builder.Services.AddApplicationServices();
