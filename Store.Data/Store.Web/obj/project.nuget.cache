@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "In2C/IDIkp/QAwWqVBtwwqILgTLbQKDy3ihoxrx8frGyDPDBlNMsjjp2otrJnjDl8drvYkTPI3UhCQibb1uN8g==",
+  "dgSpecHash": "8d0j/WvkqHapIT7+oRbdTe4euwPExAj1+Da4N1Zo2BTlpxhgfFJymZXGc8I3akv/+P+YPucZ0GOvOccFxBg/wg==",
   "success": true,
   "projectFilePath": "/Users/macbook/Documents/E-Commerce.NET/Store.Data/Store.Web/Store.Web.csproj",
   "expectedPackageFiles": [
@@ -126,6 +126,8 @@
     "/Users/macbook/.nuget/packages/nuget.projectmodel/6.11.0/nuget.projectmodel.6.11.0.nupkg.sha512",
     "/Users/macbook/.nuget/packages/nuget.protocol/6.11.0/nuget.protocol.6.11.0.nupkg.sha512",
     "/Users/macbook/.nuget/packages/nuget.versioning/6.11.0/nuget.versioning.6.11.0.nupkg.sha512",
+    "/Users/macbook/.nuget/packages/pipelines.sockets.unofficial/2.2.8/pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
+    "/Users/macbook/.nuget/packages/stackexchange.redis/2.8.16/stackexchange.redis.2.8.16.nupkg.sha512",
     "/Users/macbook/.nuget/packages/swashbuckle.aspnetcore/6.4.0/swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "/Users/macbook/.nuget/packages/swashbuckle.aspnetcore.swagger/6.4.0/swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "/Users/macbook/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.4.0/swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
