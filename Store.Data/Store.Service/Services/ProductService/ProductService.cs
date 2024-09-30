@@ -54,7 +54,7 @@ public class ProductService : IProductService
         
         var product = await _unitOfWork.Repository<Product, int>().GetWithSpecificationByIdAsync(specs);
         if(product is null)
-            throw new Exception("ProductSpecs Not Found");
+            throw new Exception("Product Not Found");
         
         var mappedProduct = _mapper.Map<ProductDetailsDto>(product);
         
