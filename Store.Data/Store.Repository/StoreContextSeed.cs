@@ -32,6 +32,14 @@ public class StoreContextSeed
                 if (products is not null)
                     await context.Products.AddRangeAsync(products);
             }
+
+            if (context.DeliveryMethods != null && !context.DeliveryMethods.Any())
+            {
+                var methodsData = File.ReadAllText("../Store.Repository/SeedData/delivery.json");
+                var methods = JsonSerializer.Deserialize<List<DeliveryMethod>>(methodsData);
+                if (methods is not null)
+                    await context.DeliveryMethods.AddRangeAsync(methods);
+            }
             
             await context.SaveChangesAsync();
         }
