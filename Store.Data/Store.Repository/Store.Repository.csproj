@@ -10,4 +10,8 @@
       <ProjectReference Include="..\Store.Data\Store.Data.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="StackExchange.Redis" Version="2.8.16" />
+    </ItemGroup>
+
 </Project>
