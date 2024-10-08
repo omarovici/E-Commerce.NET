@@ -39,7 +39,7 @@ public class Program
         });
 
         builder.Services.AddApplicationServices();
-        builder.Services.AddIdentityServices();
+        builder.Services.AddIdentityServices(builder.Configuration);
         
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();
