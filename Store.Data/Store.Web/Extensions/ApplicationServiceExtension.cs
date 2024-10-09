@@ -8,6 +8,7 @@ using Store.Service.Services.BasketService;
 using Store.Service.Services.BasketService.Dtos;
 using Store.Service.Services.ProductService;
 using Store.Service.Services.ProductService.Dtos;
+using Store.Service.Services.User_Service;
 using Store.Service.TokenService;
 
 namespace Store.Web.Extensions;
@@ -22,6 +23,7 @@ public static class ApplicationServiceExtension
         services.AddScoped<IBasketService , BasketService>();
         services.AddScoped<ITokenService , TokenService>();
         services.AddScoped<IBasketRepository , BasketRepository>();
+        services.AddScoped<IUserService, UserService>();
         services.AddAutoMapper(typeof(ProductProfile));
         services.AddAutoMapper(typeof(BasketProfile));
 

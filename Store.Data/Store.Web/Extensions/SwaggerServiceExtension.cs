@@ -28,7 +28,7 @@ public static class SwaggerServiceExtension
                 Name = "Authorization",
                 In = ParameterLocation.Header,
                 Type = SecuritySchemeType.ApiKey,
-                Scheme = "bearer",
+                Scheme = "Bearer",
                 Reference = new OpenApiReference
                 {
                     Id = "Bearer",

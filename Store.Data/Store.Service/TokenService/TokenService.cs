@@ -22,8 +22,8 @@ public class TokenService : ITokenService
         {
             new Claim(ClaimTypes.Email, appUser.Email),
             new Claim(ClaimTypes.GivenName, appUser.DisplayName),
-            new Claim("userId", appUser.Id),
-            new Claim("userName", appUser.UserName)
+            new Claim("UserId", appUser.Id),
+            new Claim("UserName", appUser.UserName)
         };
         
         var creds = new SigningCredentials(_key,SecurityAlgorithms.HmacSha256);
