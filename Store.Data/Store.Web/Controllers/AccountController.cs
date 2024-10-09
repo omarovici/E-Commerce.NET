@@ -24,5 +24,14 @@ namespace Store.Web.Controllers
             
             return Ok(user);
         }
+        [HttpPost]
+        public async Task<ActionResult<UserDto>> Register(RegisterDto input)
+        {
+            var user = await _userService.Register(input);
+            if(user is null)
+                return BadRequest(new CustomException(400,"Email is already taken"));
+            
+            return Ok(user);
+        }
     }
 }
