@@ -14,4 +14,5 @@ public class Order : BaseEntity<Guid>
     public decimal Subtotal { get; set; }
     public decimal GetTotal() => Subtotal + DeliveryMethod.Price;
     public string? BasketId { get; set; }
+    public string? PaymentIntentId { get; set; }
 }
