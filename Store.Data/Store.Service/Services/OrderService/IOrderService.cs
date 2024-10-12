@@ -6,7 +6,7 @@ namespace Store.Service.Services.OrderService;
 public interface IOrderService
 {
     Task<OrderDetailsDto> CreateOrderAsync(OrderDto input);
-    Task<IReadOnlyList<OrderDetailsDto>> GetOrdersForUserAsync(string buyerEmail);
+    Task<IReadOnlyList<OrderDetailsDto>> GetAllOrdersForUserAsync(string buyerEmail);
     Task<OrderDetailsDto> GetOrderByIdAsync(Guid id);
-    Task<IReadOnlyList<OrderDetailsDto>> GetAllDeliveryMethodsAsync();
+    Task<IReadOnlyList<DeliveryMethod>> GetAllDeliveryMethodsAsync();
 }
