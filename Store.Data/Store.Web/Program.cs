@@ -45,6 +45,14 @@ public class Program
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerDocumentation();
 
+        builder.Services.AddCors(options =>
+        {
+            options.AddPolicy("CorsPolicy", policy =>
+            {
+                policy.AllowAnyMethod().AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:4200", "http://localhost:25038");
+            });
+        });
+
         var app = builder.Build();
         await ApplySeeding.ApplySeedingAsync(app);
 
@@ -60,6 +68,8 @@ public class Program
         app.UseHttpsRedirection();
         
         app.UseStaticFiles();
+        
+        app.UseCors("CorsPolicy");
         
         app.UseAuthentication();
 
