@@ -1,0 +1,49 @@
+# .NET build outputs
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+*.sln.iml
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# ASP.NET Secrets
+secrets.json
+
+# Publish outputs
+publish/
+
+# Test results
+TestResults/
+
+# npm packages (if any front-end is added)
+node_modules/
+
+# Local environment files
+.env
+.env.*
+
+# Swagger auto-generated files
+swagger/
+
+# Backup files
+*.bak
+*.old
+
+# Others
+wwwroot/
