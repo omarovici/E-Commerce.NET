@@ -91,22 +91,33 @@ E-Commerce.NET/
   - `Stripe:SecretKey` and `Stripe:PublishableKey`: Stripe API keys
 
 ## API Endpoints
-- **Products**
-  - `GET /api/products`: List products with filtering, sorting, and pagination
-  - `GET /api/products/{id}`: Get product details
-- **Basket**
-  - `GET /api/basket/{id}`: Retrieve basket by ID
-  - `POST /api/basket`: Update basket
-  - `DELETE /api/basket/{id}`: Delete basket
-- **Account**
-  - `POST /api/account/login`: User login
-  - `POST /api/account/register`: User registration
-- **Orders**
-  - `GET /api/orders`: List user orders
-  - `GET /api/orders/{id}`: Get order details
-  - `POST /api/orders`: Create new order
-- **Payments**
-  - `POST /api/payments`: Create or update Stripe payment intent
+
+### Products
+- `GET /api/products/getallbrands` — Get all product brands
+- `GET /api/products/getalltypes` — Get all product types
+- `GET /api/products/getallproducts` — List products with filtering, sorting, and pagination
+- `GET /api/products/getproductbyid?id={id}` — Get product details by ID
+
+### Basket
+- `GET /api/basket/{id}` — Retrieve basket by ID
+- `POST /api/basket` — Update or create basket
+- `DELETE /api/basket/{id}` — Delete basket by ID
+
+### Account
+- `POST /api/account/login` — User login
+- `POST /api/account/register` — User registration
+- `GET /api/account/getcurrentuserdetails` — Get details of the currently authenticated user
+
+### Orders
+- `POST /api/order/createorderasync` — Create a new order
+- `GET /api/order/getallordersforuserasync` — List all orders for the current user
+- `GET /api/order/getorderbyidasync?id={id}` — Get order details by order ID
+- `GET /api/order/getalldeliverymethodsasync` — Get all available delivery methods
+
+### Payments
+- `POST /api/payment/createorupdatepaymentintent` — Create or update Stripe payment intent
+- `POST /api/payment/webhook` — Stripe webhook endpoint for payment events
+
 
 > For a full list and details, use the Swagger UI.
 
